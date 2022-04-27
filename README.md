@@ -1,12 +1,14 @@
-# gh-proxy
+# githubproxy
 
 ## 简介
+
+源仓库：[https://github.com/hunshcn/gh-proxy](https://github.com/hunshcn/gh-proxy)
 
 github release、archive以及项目文件的加速项目，支持clone，有Cloudflare Workers无服务器版本以及Python版本
 
 ## 演示
 
-[https://gh.api.99988866.xyz/](https://gh.api.99988866.xyz/)
+[https://githubproxy.jacklou.tk/](https://githubproxy.jacklou.tk/)
 
 演示站为公共服务，如有大规模使用需求请自行部署，演示站有点不堪重负
 
@@ -22,7 +24,7 @@ github release、archive以及项目文件的加速项目，支持clone，有Clo
 
 ## 使用
 
-直接在copy出来的url前加`https://gh.api.99988866.xyz/`即可
+直接在copy出来的url前加`https://githubproxy.jacklou.tk/`即可
 
 也可以直接访问，在input输入
 
@@ -30,15 +32,15 @@ github release、archive以及项目文件的加速项目，支持clone，有Clo
 
 以下都是合法输入（仅示例，文件不存在）：
 
-- 分支源码：https://github.com/hunshcn/project/archive/master.zip
+- 分支源码：https://github.com/KetsuLou/project/archive/master.zip
 
-- release源码：https://github.com/hunshcn/project/archive/v0.1.0.tar.gz
+- release源码：https://github.com/KetsuLou/project/archive/v0.1.0.tar.gz
 
-- release文件：https://github.com/hunshcn/project/releases/download/v0.1.0/example.zip
+- release文件：https://github.com/KetsuLou/project/releases/download/v0.1.0/example.zip
 
-- 分支文件：https://github.com/hunshcn/project/blob/master/filename
+- 分支文件：https://github.com/KetsuLou/project/blob/master/filename
 
-- commit文件：https://github.com/hunshcn/project/blob/1111111111111111111111111111/filename
+- commit文件：https://github.com/KetsuLou/project/blob/1111111111111111111111111111/filename
 
 - gist：https://gist.githubusercontent.com/cielpy/351557e6e465c12986419ac5a4dd2568/raw/cmd.py
 
@@ -48,7 +50,7 @@ github release、archive以及项目文件的加速项目，支持clone，有Clo
 
 注册，登陆，`Start building`，取一个子域名，`Create a Worker`。
 
-复制 [index.js](https://cdn.jsdelivr.net/gh/hunshcn/gh-proxy@master/index.js)  到左侧代码框，`Save and deploy`。如果正常，右侧应显示首页。
+复制 [index.js](https://cdn.jsdelivr.net/gh/KetsuLou/githubproxy@master/index.js)  到左侧代码框，`Save and deploy`。如果正常，右侧应显示首页。
 
 `index.js`默认配置下项目文件会走jsDelivr，如需走worker，修改Config变量即可
 
@@ -98,15 +100,6 @@ python版本默认走服务器（2021.3.27更新）
 * 2020.03.23 新增了clone的支持
 * 2020.03.22 初始版本
 
-## 链接
-
-[我的博客](https://hunsh.net)
-
 ## 参考
 
 [jsproxy](https://github.com/EtherDream/jsproxy/)
-
-## 捐赠
-
-![wx.png](https://img.maocdn.cn/img/2021/04/24/image.md.png)
-![ali.png](https://www.helloimg.com/images/2021/04/24/BK9vmb.md.png)
